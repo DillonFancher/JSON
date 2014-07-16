@@ -1,0 +1,80 @@
+
+/*
+class AccountsCache {
+    private HashMap<String, streamDescripTimeStamp> accountsCache = new HashMap<>();
+
+    //Constructor
+    AccountsCache (){
+
+    }
+    AccountsCache(HashMap<String, streamDescripTimeStamp> accountsCache) {
+        this.accountsCache = accountsCache;
+    }
+
+    //Getters and Setters
+    private HashMap<String, streamDescripTimeStamp> getAccountsCache() {
+        return accountsCache;
+    }
+
+    private void setAccountsCache(HashMap<String, streamDescripTimeStamp> accountsCache) {
+        this.accountsCache = accountsCache;
+    }
+
+    boolean hasKey(String key){
+        if (accountsCache.containsKey(key)) return true;
+        else return false;
+    }
+
+    void updateStreamDescriptor(String key, StreamDescriptor streamDescriptor){
+        accountsCache.get(key).setStreamDescriptor(streamDescriptor);
+    }
+
+    void addStreamDescriptor(String key, StreamDescriptor streamDescriptor){
+        long timeStamp = System.currentTimeMillis();
+        accountsCache.put(key, new streamDescripTimeStamp(streamDescriptor, timeStamp));
+    }
+
+    StreamDescriptor retrieveStreamDescriptor(String key){
+       return accountsCache.get(key).getStreamDescriptor();
+    }
+
+    boolean hasExpiredTimeStamp(String key){
+        if(accountsCache.get(key).getTimeStamp() < 86400000) return true;
+        else return false;
+    }
+
+
+
+    class streamDescripTimeStamp {
+
+        private StreamDescriptor streamDescriptor;
+        private long timeStamp;
+
+        //Constructor
+        private streamDescripTimeStamp(StreamDescriptor streamDescriptor, long timeStamp) {
+            this.streamDescriptor = streamDescriptor;
+            this.timeStamp = timeStamp;
+        }
+
+        //Getters and Setters
+        public StreamDescriptor getStreamDescriptor() {
+            return streamDescriptor;
+        }
+
+        public void setStreamDescriptor(StreamDescriptor streamDescriptor) {
+            this.timeStamp = System.currentTimeMillis();
+            this.streamDescriptor = streamDescriptor;
+        }
+
+        public long getTimeStamp() {
+            return timeStamp;
+        }
+
+        public void setTimeStamp(long timeStamp) {
+            this.timeStamp = timeStamp;
+        }
+
+    }
+}
+*/
+
